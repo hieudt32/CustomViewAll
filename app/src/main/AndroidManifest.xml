@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImageViewActivity" />
-        <activity android:name=".TextViewActivity"></activity>
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".ColorMatrixActivity"></activity>
     </application>
 
 </manifest>

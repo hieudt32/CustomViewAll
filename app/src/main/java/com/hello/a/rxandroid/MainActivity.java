@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button mRxBt;
     Button mImageViewBt;
     Button mTextViewBt;
+    Button mColorMatrixBt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mImageViewBt = findViewById(R.id.image_view_bt);
         mRxBt = findViewById(R.id.start_rx);
-        mTextViewBt = findViewById(R.id.image_view_bt);
+        mTextViewBt = findViewById(R.id.text_view_bt);
+        mColorMatrixBt = findViewById(R.id.color_matrix);
+
+        mColorMatrixBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ColorMatrixActivity.class));
+            }
+        });
 
         mTextViewBt.setOnClickListener(new View.OnClickListener() {
             @Override

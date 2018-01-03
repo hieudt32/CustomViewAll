@@ -1,6 +1,5 @@
 package com.hello.a.customview;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
